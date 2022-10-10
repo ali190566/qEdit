@@ -1,0 +1,23 @@
+{
+  "name": "qedit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/js/main.js",
+  "devDependencies": {
+    "electron": "^21.1.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/It-is-Quantum/qEdit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/It-is-Quantum/qEdit/issues"
+  },
+  "homepage": "https://github.com/It-is-Quantum/qEdit#readme"
+}

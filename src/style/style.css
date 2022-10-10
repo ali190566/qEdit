@@ -1,0 +1,19 @@
+body 
+{
+    background-color: rgba(89, 29, 95, 0.397);
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    position: fixed;
+}
+
+#main-textarea 
+{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: darkgreen;
+    border: none;
+    outline: none;
+}
