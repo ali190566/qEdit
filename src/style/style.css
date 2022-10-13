@@ -1,3 +1,4 @@
+
 body {
     background-color: rgb(31, 0, 34);
     height: 100%;
@@ -29,6 +30,7 @@ body {
 }
 
 .titleBar {
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr auto;
     background-color: darkgrey;
@@ -38,11 +40,12 @@ body {
     float: right;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100px;
+    width: 180px;
     webkit-app-region: no-drag;
 }
 
 .windowControls button {
+    height: 90%;
     padding: 5px;
     outline: 0;
     border: 0;
