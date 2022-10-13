@@ -1,5 +1,6 @@
 const electron = require('electron');
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
+const ipc = ipcMain;
 
 function createWindow () 
 {
@@ -10,10 +11,26 @@ function createWindow ()
         frame: false,
         autoHideMenuBar: true,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false,
+            devTools: true
         }
     })
     window.loadFile('src/index.html')
+
+
+    ipc.on('closeApp', () => {
+        window.close();
+    })
+
+    ipc.on('maximiseApp', () => {
+        window.maximize();
+    })
+
+    ipc.on('minimiseApp', () => {
+        window.minimize();
+    })
+
 }
 
 app.whenReady().then(createWindow)

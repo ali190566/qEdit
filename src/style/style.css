@@ -41,6 +41,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     margin-right: 5px;
     width: 100px;
+    webkit-app-region: no-drag;
 }
 
 .windowControls button {
@@ -48,6 +49,18 @@ body {
     border: 0;
     padding: 5px;
     background: none;
+}
+
+#closeBtn:hover {
+    background-color: red;
+}
+
+#minimiseBtn:hover {
+    background-color: gray;
+}
+
+#maximiseBtn:hover {
+    background-color: gray;
 }
 
 .drag {

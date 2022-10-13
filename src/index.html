@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <script defer src="js/appFunctions.js"></script>
 </head>
 <body>
 
@@ -15,14 +16,14 @@
 
                 <div class="windowTitle preventSelect drag">SNIPPETS</div>
 
-                <div class="windowControls windowControlsStyle preventSelect drag">
-                    <button id="minimise">
+                <div class="windowControls windowControlsStyle preventSelect no-drag">
+                    <button id="minimiseBtn">
                         <img src="../resources/icons/icons8-arrows-32.png" alt="" width="16px">
                     </button>
-                    <button id="maximise">
+                    <button id="maximiseBtn">
                         <img src="../resources/icons/icons8-maximize-32.png" alt="" width="13px">
                     </button>
-                    <button id="close">
+                    <button id="closeBtn">
                         <img src="../resources/icons/icons8-close.svg" alt="" width="16px">
                     </button>
                 </div>
@@ -32,5 +33,6 @@
     </div>
 
     <textarea name="Bob" id="main-textarea" class="no-drag"></textarea>
+    
 </body>
 </html>
