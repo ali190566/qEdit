@@ -5,8 +5,10 @@ function createWindow ()
 {
     const window = new BrowserWindow 
     ({
-        width: 1920,
-        height: 1080,
+        width: 1280,
+        height: 720,
+        frame: false,
+        autoHideMenuBar: true,
         webPreferences: {
             nodeIntegration: true
         }
