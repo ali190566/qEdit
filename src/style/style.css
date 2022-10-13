@@ -24,7 +24,6 @@ body {
 }
 
 .windowTitle {
-    padding: 10px;
     height: auto;
     display: inline-block;
 }
@@ -39,15 +38,14 @@ body {
     float: right;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-right: 5px;
     width: 100px;
     webkit-app-region: no-drag;
 }
 
 .windowControls button {
+    padding: 5px;
     outline: 0;
     border: 0;
-    padding: 5px;
     background: none;
 }
 
